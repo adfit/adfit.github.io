@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--Description-->
+    
+        <meta name="description" content="지원환경
+개발환경 : Android Studio 사용을 권장합니다.(Eclipse는 미지원)
+지원버전 : API level 14 이상 지원(Ice Cream Sandwitch)
+개발언어 : kotlin
+AdFit SDK v3.5.3부터 Android 11 (타겟 API">
+    
+
+    <!--Author-->
+    
+        <meta name="author" content="adfit">
+    
+
+    <!--Open Graph Title-->
+    
+        <meta property="og:title" content="Android"/>
+    
+
+    <!--Open Graph Site Name-->
+    <meta property="og:site_name" content="Kakao AdFit Guide"/>
+
+    <!--Page Cover-->
+    
+        <meta property="og:image" content=""/>
+    
+
+    <!-- Title -->
+    
+    <title>Android - Kakao AdFit Guide</title>
+
+    <!-- Custom CSS -->
+    
+<link rel="stylesheet" href="/sass/main.css">
+
+
+    <!--[if lt IE 8]>
+        
+<script src="/js/ie/html5shiv.js"></script>
+
+    <![endif]-->
+
+    <!--[if lt IE 8]>
+        
+<link rel="stylesheet" href="/sass/ie8.css">
+
+    <![endif]-->
+
+    <!--[if lt IE 9]>
+        
+<link rel="stylesheet" href="/sass/ie9.css">
+
+    <![endif]-->
+
+    <!-- Gallery -->
+    <link href="//cdn.rawgit.com/noelboss/featherlight/1.3.5/release/featherlight.min.css" type="text/css" rel="stylesheet" />
+
+    <!-- Google Analytics -->
+    
+
+
+<meta name="generator" content="Hexo 5.2.0"></head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Menu -->
+        <!-- Header -->
+<header id="header">
+    <div class="inner">
+
+        <!-- Logo -->
+        <a href="/" class="logo">
+            <span class="symbol"><img src="/images/logo.svg" alt="" /></span><span class="title">Kakao AdFit Guide</span>
+        </a>
+
+        <!-- Nav -->
+        <!-- <nav>
+            <ul>
+                <li><a href="#menu">Menu</a></li>
+            </ul>
+        </nav> -->
+
+    </div>
+</header>
+
+<!-- Menu -->
+<nav id="menu">
+    <h2>Menu</h2>
+    <ul>
+        
+            <li>
+                <a href="/">Home</a>
+            </li>
+        
+            <li>
+                <a href="/archives">Archives</a>
+            </li>
+        
+            <li>
+                <a href="/about.html">About</a>
+            </li>
+        
+    </ul>
+</nav>
+
+
+        <div id="main">
+            <div class="inner">
+
+                <!-- Main Content -->
+                
+
+    <h1>Android</h1>
+
+
+
+<!-- Gallery -->
+
+
+<!-- Content -->
+<h2 id="지원환경"><a href="#지원환경" class="headerlink" title="지원환경"></a>지원환경</h2><ul>
+<li>개발환경 : <a target="_blank" rel="noopener" href="https://developer.android.com/studio/">Android Studio</a> 사용을 권장합니다.(Eclipse는 미지원)</li>
+<li>지원버전 : API level 14 이상 지원(<a target="_blank" rel="noopener" href="https://developer.android.com/about/versions/android-4.0">Ice Cream Sandwitch</a>)</li>
+<li>개발언어 : kotlin</li>
+<li>AdFit SDK v3.5.3부터 Android 11 (타겟 API 레벨 30 이상)을 대응합니다.</li>
+</ul>
+<h2 id="지원-광고유형"><a href="#지원-광고유형" class="headerlink" title="지원 광고유형"></a>지원 광고유형</h2><ul>
+<li>배너 타입 광고<blockquote>
+<ul>
+<li>지원 사이즈<blockquote>
+<ul>
+<li>300 x 250</li>
+<li>320 x 100</li>
+<li>320 x 50</li>
+</ul>
+</blockquote>
+</li>
+</ul>
+</blockquote>
+</li>
+</ul>
+<h2 id="앱-등록시-타겟층-설정"><a href="#앱-등록시-타겟층-설정" class="headerlink" title="앱 등록시 타겟층 설정"></a>앱 등록시 타겟층 설정</h2><ul>
+<li>AdFit을 통해서 광고를 노출하는 경우,  안드로이드앱을 <a target="_blank" rel="noopener" href="https://play.google.com/apps/publish">Google Play Console</a>에 제출할 때 앱의 대상 연령대를 반드시 설정해야 합니다.</li>
+<li>앱의 대상 연령대가 일반 사용자(만 13세 이상)인 경우 가족 정책이 적용되지 않으나, 어린이(만 13세 미만)를 대상 연령대에 포함할 경우 Google의 가족 정책을 준수해야 합니다.</li>
+<li>앱의 대상 연령대에 어린이(만 13세 미만)가 포함될 경우, 광고 정책 설정 시 Google Play의 가족용 광고 프로그램 또는 앱의 중립적인 연령 심사 구현 여부에 관한 질문이 표시될 수도 있습니다.</li>
+</ul>
+<img src="/images/google_play_console_targeting.png" alt="google_play_display" style="width:1200px;"/>
+
+<h2 id="개발-가이드"><a href="#개발-가이드" class="headerlink" title="개발 가이드"></a>개발 가이드</h2><p>AdFit SDK를 다운로드하여 매체에 설치 후 광고를 설정합니다.<br>최신 AdFit SDK 다운로드 및 상세 개발 가이드는 <a target="_blank" rel="noopener" href="https://github.com/adfit/adfit-android-sdk">AdFit Android SDK Github</a>을 통해 확인 가능합니다.   </p>
+<p>이 문서는 Kakao 신디케이션 제휴 당사자에 한해 제공되는 자료로 가이드 라인을 포함한 모든 자료의 지적재산권은 주식회사 카카오가 보유합니다.</p>
+<p>Copyright © Kakao Corp. All rights reserved.</p>
+
+
+<!-- Tags -->
+
+
+
+<div class="tags">
+    <a href="/tags/sdk/" class="button small">sdk</a> <a href="/tags/android/" class="button small">android</a> <a href="/tags/mobile/" class="button small">mobile</a>
+</div>
+
+
+
+<!-- Comments -->
+<div>
+    
+
+
+</div>
+
+
+
+            </div>
+        </div>
+
+        <!-- Footer -->
+<footer id="footer">
+    <div class="inner">        
+        <!-- <section>
+            <h2>About</h2>
+            <div>
+                세부 내용은 <a target="_blank" rel="noopener" href="https://adfit.kakao.com/web/html/use_kakao.html">애드핏 운영정책</a>을 통해 확인할 수 있습니다.
+            </div>
+        </section>         -->
+        <!-- <section>
+            <h2>Follow</h2>
+            <ul class="icons">
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+            </ul>
+        </section> -->
+        <ul class="copyright">
+            <li>&copy; Kakao AdFit. All rights reserved</li>
+            <li>Design: <a href="http://html5up.net" target="_blank">HTML5 UP</a></li>
+            <li>Hexo: <a href="http://www.codeblocq.com/" target="_blank">Jonathan Klughertz</a></li>
+        </ul>
+    </div>
+</footer>
+    </div>
+
+    <!-- After footer scripts -->
+    
+<!-- jQuery -->
+
+<script src="/js/jquery.min.js"></script>
+
+
+<!-- skel -->
+
+<script src="/js/skel.min.js"></script>
+
+
+<!-- Custom Code -->
+
+<script src="/js/util.js"></script>
+
+
+<!--[if lte IE 8]>
+
+<script src="/js/ie/respond.min.js"></script>
+
+<![endif]-->
+
+<!-- Custom Code -->
+
+<script src="/js/main.js"></script>
+
+
+<!-- Gallery -->
+<script src="//cdn.rawgit.com/noelboss/featherlight/1.3.5/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+
+<!-- Disqus Comments -->
+
+
+</body>
+
+</html>

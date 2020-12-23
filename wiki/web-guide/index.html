@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--Description-->
+    
+        <meta name="description" content="지원환경
+AdFit SDK는 Internet Explorer 8이상, Chrome 브라우저에서 동작합니다.
+
+지원 광고유형
+배너 타입 광고
+
+지원 사이즈
+
+160 x 600
+250 x 250
+300 x 250
+320 x 100
+320 x 50
+728 x 90
+
+
+
+
+
+">
+    
+
+    <!--Author-->
+    
+        <meta name="author" content="adfit">
+    
+
+    <!--Open Graph Title-->
+    
+        <meta property="og:title" content="Web"/>
+    
+
+    <!--Open Graph Site Name-->
+    <meta property="og:site_name" content="Kakao AdFit Guide"/>
+
+    <!--Page Cover-->
+    
+        <meta property="og:image" content=""/>
+    
+
+    <!-- Title -->
+    
+    <title>Web - Kakao AdFit Guide</title>
+
+    <!-- Custom CSS -->
+    
+<link rel="stylesheet" href="/sass/main.css">
+
+
+    <!--[if lt IE 8]>
+        
+<script src="/js/ie/html5shiv.js"></script>
+
+    <![endif]-->
+
+    <!--[if lt IE 8]>
+        
+<link rel="stylesheet" href="/sass/ie8.css">
+
+    <![endif]-->
+
+    <!--[if lt IE 9]>
+        
+<link rel="stylesheet" href="/sass/ie9.css">
+
+    <![endif]-->
+
+    <!-- Gallery -->
+    <link href="//cdn.rawgit.com/noelboss/featherlight/1.3.5/release/featherlight.min.css" type="text/css" rel="stylesheet" />
+
+    <!-- Google Analytics -->
+    
+
+
+<meta name="generator" content="Hexo 5.2.0"></head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Menu -->
+        <!-- Header -->
+<header id="header">
+    <div class="inner">
+
+        <!-- Logo -->
+        <a href="/" class="logo">
+            <span class="symbol"><img src="/images/logo.svg" alt="" /></span><span class="title">Kakao AdFit Guide</span>
+        </a>
+
+        <!-- Nav -->
+        <!-- <nav>
+            <ul>
+                <li><a href="#menu">Menu</a></li>
+            </ul>
+        </nav> -->
+
+    </div>
+</header>
+
+<!-- Menu -->
+<nav id="menu">
+    <h2>Menu</h2>
+    <ul>
+        
+            <li>
+                <a href="/">Home</a>
+            </li>
+        
+            <li>
+                <a href="/archives">Archives</a>
+            </li>
+        
+            <li>
+                <a href="/about.html">About</a>
+            </li>
+        
+    </ul>
+</nav>
+
+
+        <div id="main">
+            <div class="inner">
+
+                <!-- Main Content -->
+                
+
+    <h1>Web</h1>
+
+
+
+<!-- Gallery -->
+
+
+<!-- Content -->
+<h2 id="지원환경"><a href="#지원환경" class="headerlink" title="지원환경"></a>지원환경</h2><ul>
+<li>AdFit SDK는 Internet Explorer 8이상, Chrome 브라우저에서 동작합니다.</li>
+</ul>
+<h2 id="지원-광고유형"><a href="#지원-광고유형" class="headerlink" title="지원 광고유형"></a>지원 광고유형</h2><ul>
+<li>배너 타입 광고<blockquote>
+<ul>
+<li>지원 사이즈<blockquote>
+<ul>
+<li>160 x 600</li>
+<li>250 x 250</li>
+<li>300 x 250</li>
+<li>320 x 100</li>
+<li>320 x 50</li>
+<li>728 x 90</li>
+</ul>
+</blockquote>
+</li>
+</ul>
+</blockquote>
+</li>
+</ul>
+<h2 id="개발-가이드"><a href="#개발-가이드" class="headerlink" title="개발 가이드"></a>개발 가이드</h2><p>AdFit에서 배너 유형의 광고단위를 생성 시 아래와 같은 형식의 광고 설정 스크립트가 생성됩니다.</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;ins <span class="class"><span class="keyword">class</span></span>=<span class="string">&quot;kakao_ddn_area&quot;</span> style=<span class="string">&quot;display:none;width:100%;&quot;</span></span><br><span class="line"> data-ad-unit    = <span class="string">&quot;광고단위ID&quot;</span></span><br><span class="line"> data-ad-width   = <span class="string">&quot;광고단위 가로 사이즈&quot;</span></span><br><span class="line"> data-ad-height  = <span class="string">&quot;광고단위 세로 사이즈&quot;</span>&gt;&lt;/ins&gt;</span><br><span class="line">&lt;script <span class="keyword">async</span> type=<span class="string">&quot;text/javascript&quot;</span> src=<span class="string">&quot;//t1.daumcdn.net/kas/static/ba.min.js&quot;</span>&gt;&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+<p>광고를 노출할 페이지에 AdFit에서 생성된 광고 설정 스크립트를 삽입합니다.<br>광고 스크립트 내 광고단위 정보를 변경하거나 코드를 수정해서 설치할 경우, 광고 요청에 실패하거나 잘못된 광고 요청으로 처리될 수 있습니다.</p>
+<p>상세 개발 가이드는 <a target="_blank" rel="noopener" href="https://github.com/adfit/adfit-web-sdk">AdFit Web SDK Github</a>을 통해 확인 가능합니다.   </p>
+<p>이 문서는 Kakao 신디케이션 제휴 당사자에 한해 제공되는 자료로 가이드 라인을 포함한 모든 자료의 지적재산권은 주식회사 카카오가 보유합니다.</p>
+<p>Copyright © Kakao Corp. All rights reserved.</p>
+
+
+<!-- Tags -->
+
+
+
+<div class="tags">
+    
+</div>
+
+
+
+<!-- Comments -->
+<div>
+    
+
+
+</div>
+
+
+
+            </div>
+        </div>
+
+        <!-- Footer -->
+<footer id="footer">
+    <div class="inner">        
+        <!-- <section>
+            <h2>About</h2>
+            <div>
+                세부 내용은 <a target="_blank" rel="noopener" href="https://adfit.kakao.com/web/html/use_kakao.html">애드핏 운영정책</a>을 통해 확인할 수 있습니다.
+            </div>
+        </section>         -->
+        <!-- <section>
+            <h2>Follow</h2>
+            <ul class="icons">
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+            </ul>
+        </section> -->
+        <ul class="copyright">
+            <li>&copy; Kakao AdFit. All rights reserved</li>
+            <li>Design: <a href="http://html5up.net" target="_blank">HTML5 UP</a></li>
+            <li>Hexo: <a href="http://www.codeblocq.com/" target="_blank">Jonathan Klughertz</a></li>
+        </ul>
+    </div>
+</footer>
+    </div>
+
+    <!-- After footer scripts -->
+    
+<!-- jQuery -->
+
+<script src="/js/jquery.min.js"></script>
+
+
+<!-- skel -->
+
+<script src="/js/skel.min.js"></script>
+
+
+<!-- Custom Code -->
+
+<script src="/js/util.js"></script>
+
+
+<!--[if lte IE 8]>
+
+<script src="/js/ie/respond.min.js"></script>
+
+<![endif]-->
+
+<!-- Custom Code -->
+
+<script src="/js/main.js"></script>
+
+
+<!-- Gallery -->
+<script src="//cdn.rawgit.com/noelboss/featherlight/1.3.5/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+
+<!-- Disqus Comments -->
+
+
+</body>
+
+</html>
